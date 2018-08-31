@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fredags grid øvelse 1</title>
+    <style>
+        .box {
+            background-color: #2ec6c6;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 300px 100px;
+            grid-gap: 5px;
+        }
+
+        .boxa {
+            grid-column-start: 1;
+            grid-column-end: span 4;
+            background-color: yellow;
+        }
+
+        .boxb {
+            grid-column-start: 1;
+            grid-column-end: span 1;
+            background-color: forestgreen;
+        }
+
+        .boxc {
+            grid-column-start: 2;
+            grid-column-end: span 3;
+            background-color: lightcoral;
+        }
+
+        .boxd {
+            grid-column-start: 1;
+            grid-column-end: span 4;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="box boxa"> a</div>
+        <div class="box boxb"> b</div>
+        <div class="box boxc"> c</div>
+        <div class="box boxd"> d</div>
+    </main>
+    <script></script>
+</body>
+
+</html>
